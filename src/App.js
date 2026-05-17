@@ -41,7 +41,7 @@ export default function App() {
       }}>
         <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", height: 64 }}>
           <div onClick={() => go("Home")} style={{ display: "flex", alignItems: "center", gap: 10, cursor: "pointer" }}>
-            <div style={{ width: 38, height: 38, borderRadius: "50%", background: "linear-gradient(135deg, #0ea5e9, #1d4ed8)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, boxShadow: "0 4px 16px rgba(14,165,233,0.4)" }}>
+            <div style={{ width: 38, height: 38, borderRadius: "50%", background: "linear-gradient(135deg, #0ea5e9, #1d4ed8)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20 }}>
               ⚓
             </div>
             <div>
@@ -83,12 +83,14 @@ export default function App() {
           <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: 40, marginBottom: 40 }}>
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
-                <div style={{ width: 32, height: 32, borderRadius: "50%", background: "linear-gradient(135deg, #0ea5e9, #1d4ed8)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14 }}>⚓</div>
+                <div style={{ width: 32, height: 32, borderRadius: "50%", background: "linear-gradient(135deg, #0ea5e9, #1d4ed8)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16 }}>
+                  ⚓
+                </div>
                 <div style={{ fontWeight: 800, fontSize: 16 }}>SHORE<span style={{ color: C.blue }}>BRIDGE</span></div>
               </div>
               <p style={{ color: C.dim, fontSize: 13, lineHeight: 1.7, maxWidth: 280 }}>India's first platform connecting seafarers' shore leave to meaningful employment. Built for 1.8 million Indian seafarers.</p>
               <div style={{ marginTop: 16 }}>
-                <a href="mailto:hello@shorebridge.in" style={{ color: C.blue, fontSize: 13 }}>hello@shorebridge.in</a>
+                <a href="mailto:venkat@shorebridge.in" style={{ color: C.blue, fontSize: 13 }}>venkat@shorebridge.in</a>
               </div>
             </div>
             {[
@@ -140,7 +142,7 @@ function HomePage({ go }) {
               Where the Ocean's Best<br /><span style={{ color: C.blue }}>Come Ashore</span> to Work
             </h1>
             <p style={{ fontSize: 18, color: C.muted, lineHeight: 1.8, marginBottom: 36, maxWidth: 580 }}>
-              India's first platform connecting <strong style={{ color: "#fff" }}>1.8 million seafarers</strong> to shore employment during their 4-6 month leave — AI matched, INDOS verified, with replacement clusters for year-round income.
+              India's first platform connecting <strong style={{ color: "#fff" }}>1.8 million seafarers</strong> to shore employment during their 4-6 month leave — AI matched, INDOS verified, with replacement clusters.
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginBottom: 56 }}>
               <button onClick={() => go("Contact")} style={{ background: "linear-gradient(135deg, #0ea5e9, #1d4ed8)", border: "none", color: "#fff", padding: "14px 32px", borderRadius: 10, cursor: "pointer", fontSize: 15, fontWeight: 700, boxShadow: "0 4px 16px rgba(14,165,233,0.3)" }}>
@@ -206,20 +208,20 @@ function HomePage({ go }) {
           <div style={{ background: "rgba(14,165,233,0.05)", border: "1px solid rgba(14,165,233,0.2)", borderRadius: 20, padding: "2.5rem" }}>
             <div style={{ fontSize: 36, marginBottom: 16 }}>⚓</div>
             <h3 style={{ fontSize: 22, fontWeight: 800, color: "#fff", marginBottom: 12 }}>For Seafarers</h3>
-            <p style={{ color: C.muted, fontSize: 14, lineHeight: 1.7, marginBottom: 20 }}>Stop losing income during shore leave. Your maritime skills are worth real money on land. We translate your seafaring expertise to land-based employment.</p>
+            <p style={{ color: C.muted, fontSize: 14, lineHeight: 1.7, marginBottom: 20 }}>Stop losing income during shore leave. Your maritime skills are worth real money on land. We translate your skills to shore roles.</p>
             {["Free to join and register", "AI-matched jobs by rank", "Group health and life insurance", "Replacement cluster — earn annually"].map(b => (
               <div key={b} style={{ display: "flex", gap: 8, marginBottom: 8, fontSize: 13, color: C.muted }}><span style={{ color: C.green }}>✓</span>{b}</div>
             ))}
-            <button onClick={() => go("For Seafarers")} style={{ marginTop: 20, background: "linear-gradient(135deg, #0ea5e9, #1d4ed8)", border: "none", color: "#fff", padding: "12px 24px", borderRadius: 8, cursor: "pointer", fontWeight: 700 }}>Learn More →</button>
+            <button onClick={() => go("For Seafarers")} style={{ marginTop: 20, background: "linear-gradient(135deg, #0ea5e9, #1d4ed8)", border: "none", color: "#fff", padding: "12px 24px", borderRadius: 10, cursor: "pointer", fontSize: 14, fontWeight: 700 }}>Learn More</button>
           </div>
           <div style={{ background: "rgba(245,158,11,0.05)", border: "1px solid rgba(245,158,11,0.2)", borderRadius: 20, padding: "2.5rem" }}>
             <div style={{ fontSize: 36, marginBottom: 16 }}>🏢</div>
             <h3 style={{ fontSize: 22, fontWeight: 800, color: "#fff", marginBottom: 12 }}>For Corporates</h3>
-            <p style={{ color: C.muted, fontSize: 14, lineHeight: 1.7, marginBottom: 20 }}>Access India's most disciplined workforce. Safety-trained, process-oriented, available for 4-6 month contract roles across industries.</p>
+            <p style={{ color: C.muted, fontSize: 14, lineHeight: 1.7, marginBottom: 20 }}>Access India's most disciplined workforce. Safety-trained, process-oriented, available for 4-6 month contracts. Pay only on successful hire.</p>
             {["Verified INDOS profiles", "Pay 8-12% only on successful hire", "Replacement Cluster continuity", "Oil and gas, EPC, ports, logistics ready"].map(b => (
               <div key={b} style={{ display: "flex", gap: 8, marginBottom: 8, fontSize: 13, color: C.muted }}><span style={{ color: C.gold }}>✓</span>{b}</div>
             ))}
-            <button onClick={() => go("For Corporates")} style={{ marginTop: 20, background: "linear-gradient(135deg, #f59e0b, #d97706)", border: "none", color: "#fff", padding: "12px 24px", borderRadius: 8, cursor: "pointer", fontWeight: 700 }}>Explore Hiring →</button>
+            <button onClick={() => go("For Corporates")} style={{ marginTop: 20, background: "linear-gradient(135deg, #f59e0b, #d97706)", border: "none", color: "#fff", padding: "12px 24px", borderRadius: 10, cursor: "pointer", fontSize: 14, fontWeight: 700 }}>Learn More</button>
           </div>
         </div>
       </section>
@@ -255,7 +257,7 @@ function HomePage({ go }) {
           <div style={{ background: "linear-gradient(135deg, rgba(14,165,233,0.12), rgba(29,78,216,0.12))", border: "1px solid rgba(14,165,233,0.2)", borderRadius: 20, padding: "3rem", textAlign: "center" }}>
             <h2 style={{ fontSize: 28, fontWeight: 800, color: "#fff", marginBottom: 12 }}>India's Seafarers Deserve Income Ashore</h2>
             <p style={{ color: C.muted, fontSize: 15, marginBottom: 28 }}>Join the waitlist — first 5,000 seafarers get 12 months Premium free.</p>
-            <button onClick={() => go("Contact")} style={{ background: "linear-gradient(135deg, #0ea5e9, #1d4ed8)", border: "none", color: "#fff", padding: "14px 40px", borderRadius: 10, cursor: "pointer", fontSize: 15, fontWeight: 700, boxShadow: "0 4px 16px rgba(14,165,233,0.3)" }}>
+            <button onClick={() => go("Contact")} style={{ background: "linear-gradient(135deg, #0ea5e9, #1d4ed8)", border: "none", color: "#fff", padding: "14px 40px", borderRadius: 10, cursor: "pointer", fontSize: 15, fontWeight: 700 }}>
               Join Free — Register Now
             </button>
           </div>
@@ -281,7 +283,7 @@ function HowItWorksPage({ go }) {
           <h2 style={{ fontSize: 20, fontWeight: 700, color: C.blue, marginBottom: 24 }}>For Seafarers</h2>
           {[
             { icon: "📱", t: "Download and Register", d: "Download the ShoreBridge app on Android. Sign up with mobile number — OTP verified instantly. Enter INDOS number for DG Shipping verification." },
-            { icon: "📋", t: "Build Your Maritime Profile", d: "Enter rank, COC details, STCW certificates, vessel types, flag states, and experience. AI automatically translates your profile to shore-employer language." },
+            { icon: "📋", t: "Build Your Maritime Profile", d: "Enter rank, COC details, STCW certificates, vessel types, flag states, and experience. AI automatically translates your profile to shore roles." },
             { icon: "📅", t: "Log Your Shore Window", d: "Enter sign-off date and expected next contract joining date. ShoreBridge markets your profile to relevant employers during this window automatically." },
             { icon: "🤖", t: "Receive Matched Jobs", d: "Get notified of matched shore project roles filtered by rank, location, and availability. Apply with one tap — your profile does the talking." },
             { icon: "🤝", t: "Interview and Get Hired", d: "Connect directly with the hiring corporate. Standardised shore contract template provided. 4-6 month project role aligned to your shore leave." },
@@ -316,7 +318,7 @@ function HowItWorksPage({ go }) {
           ))}
         </div>
         <div style={{ textAlign: "center", marginTop: 40 }}>
-          <button onClick={() => go("Contact")} style={{ background: "linear-gradient(135deg, #0ea5e9, #1d4ed8)", border: "none", color: "#fff", padding: "14px 36px", borderRadius: 10, cursor: "pointer", fontSize: 15, fontWeight: 700, boxShadow: "0 4px 16px rgba(14,165,233,0.3)" }}>Get Started</button>
+          <button onClick={() => go("Contact")} style={{ background: "linear-gradient(135deg, #0ea5e9, #1d4ed8)", border: "none", color: "#fff", padding: "14px 36px", borderRadius: 10, cursor: "pointer", fontSize: 15, fontWeight: 700 }}>Get Started</button>
         </div>
       </div>
     </div>
@@ -383,7 +385,7 @@ function SeafarersPage({ go }) {
           </table>
         </div>
         <div style={{ textAlign: "center" }}>
-          <button onClick={() => go("Contact")} style={{ background: "linear-gradient(135deg, #0ea5e9, #1d4ed8)", border: "none", color: "#fff", padding: "14px 40px", borderRadius: 10, cursor: "pointer", fontSize: 15, fontWeight: 700, boxShadow: "0 4px 16px rgba(14,165,233,0.3)" }}>
+          <button onClick={() => go("Contact")} style={{ background: "linear-gradient(135deg, #0ea5e9, #1d4ed8)", border: "none", color: "#fff", padding: "14px 40px", borderRadius: 10, cursor: "pointer", fontSize: 15, fontWeight: 700 }}>
             Register Free — First 5,000 Get Premium Free
           </button>
         </div>
@@ -425,7 +427,7 @@ function CorporatesPage({ go }) {
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
             {[
               { plan: "Hire", price: "8-12% of CTC", sub: "Per successful placement", features: ["Pay only on hire", "INDOS verified candidates", "Contract template included", "60-day replacement guarantee"] },
-              { plan: "Cluster SaaS", price: "Rs 15K-50K/month", sub: "Per replacement cluster", features: ["Year-round continuity", "Same-rank replacement pool", "Zero retraining cost", "Annual subscription model"] },
+              { plan: "Cluster SaaS", price: "Rs 15K-50K/month", sub: "Per replacement cluster", features: ["Year-round continuity", "Same-rank replacement pool", "Zero retraining cost", "Annual subscription"] },
               { plan: "Enterprise", price: "Custom", sub: "For large-scale hiring", features: ["Batch hiring 5-50 seafarers", "Dedicated account manager", "Custom analytics", "Priority matching"] },
             ].map((p, i) => (
               <div key={i} style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "1.5rem" }}>
@@ -440,7 +442,7 @@ function CorporatesPage({ go }) {
           </div>
         </div>
         <div style={{ textAlign: "center" }}>
-          <button onClick={() => go("Contact")} style={{ background: "linear-gradient(135deg, #f59e0b, #d97706)", border: "none", color: "#fff", padding: "14px 40px", borderRadius: 10, cursor: "pointer", fontSize: 15, fontWeight: 700, boxShadow: "0 4px 16px rgba(245,158,11,0.3)" }}>
+          <button onClick={() => go("Contact")} style={{ background: "linear-gradient(135deg, #f59e0b, #d97706)", border: "none", color: "#fff", padding: "14px 40px", borderRadius: 10, cursor: "pointer", fontSize: 15, fontWeight: 700 }}>
             Post a Role — First 2 Hires Free
           </button>
         </div>
@@ -459,16 +461,16 @@ function AboutPage({ go }) {
         <div style={{ textAlign: "center", marginBottom: 48 }}>
           <div style={{ fontSize: 11, letterSpacing: 4, color: C.blue, textTransform: "uppercase", marginBottom: 8 }}>Our Story</div>
           <h1 style={{ fontSize: 36, fontWeight: 800, color: "#fff", marginBottom: 16 }}>Built for India's Seafarers</h1>
-          <p style={{ color: C.muted, fontSize: 16, maxWidth: 620, margin: "0 auto", lineHeight: 1.8 }}>ShoreBridge was born from a simple observation: India produces the world's finest seafarers, yet they earn zero during their shore leave.</p>
+          <p style={{ color: C.muted, fontSize: 16, maxWidth: 620, margin: "0 auto", lineHeight: 1.8 }}>ShoreBridge was born from a simple observation: India produces the world's finest seafarers, yet millions sit idle ashore earning zero during their 4-6 month leave cycles.</p>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 40 }}>
           <div style={{ background: "rgba(14,165,233,0.04)", border: "1px solid rgba(14,165,233,0.12)", borderRadius: 16, padding: "2rem" }}>
             <h3 style={{ fontSize: 18, fontWeight: 700, color: C.blue, marginBottom: 12 }}>Our Mission</h3>
-            <p style={{ color: C.muted, fontSize: 14, lineHeight: 1.8 }}>To formalise and maximise shore employment for every Indian seafarer — from Master Mariners to Ordinary Seamen — ensuring their maritime skills translate to meaningful income ashore.</p>
+            <p style={{ color: C.muted, fontSize: 14, lineHeight: 1.8 }}>To formalise and maximise shore employment for every Indian seafarer — from Master Mariners to Ordinary Seamen — ensuring that zero certified maritime talent is wasted.</p>
           </div>
           <div style={{ background: "rgba(16,185,129,0.04)", border: "1px solid rgba(16,185,129,0.12)", borderRadius: 16, padding: "2rem" }}>
             <h3 style={{ fontSize: 18, fontWeight: 700, color: C.green, marginBottom: 12 }}>Our Vision</h3>
-            <p style={{ color: C.muted, fontSize: 14, lineHeight: 1.8 }}>To become the global operating system for seafarer shore employment — connecting 5 million seafarers across India, Philippines, and beyond to year-round cluster-based income.</p>
+            <p style={{ color: C.muted, fontSize: 14, lineHeight: 1.8 }}>To become the global operating system for seafarer shore employment — connecting 5 million seafarers across India, Philippines, and beyond to meaningful 4-6 month contracts annually.</p>
           </div>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 20, marginBottom: 40, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 16, padding: "2rem" }}>
@@ -480,7 +482,7 @@ function AboutPage({ go }) {
           ))}
         </div>
         <div style={{ textAlign: "center" }}>
-          <button onClick={() => go("Contact")} style={{ background: "linear-gradient(135deg, #0ea5e9, #1d4ed8)", border: "none", color: "#fff", padding: "14px 36px", borderRadius: 10, cursor: "pointer", fontSize: 15, fontWeight: 700, boxShadow: "0 4px 16px rgba(14,165,233,0.3)" }}>Join Our Mission</button>
+          <button onClick={() => go("Contact")} style={{ background: "linear-gradient(135deg, #0ea5e9, #1d4ed8)", border: "none", color: "#fff", padding: "14px 36px", borderRadius: 10, cursor: "pointer", fontSize: 15, fontWeight: 700 }}>Get Started</button>
         </div>
       </div>
     </div>
@@ -529,7 +531,7 @@ function ContactPage({ formData, setFormData, submitted, handleSubmit }) {
               <div key={f.key} style={{ marginBottom: 18 }}>
                 <label style={{ fontSize: 12, color: C.muted, fontWeight: 600, letterSpacing: 0.5, display: "block", marginBottom: 6 }}>{f.label}</label>
                 <input value={formData[f.key]} onChange={e => setFormData(d => ({ ...d, [f.key]: e.target.value }))} placeholder={f.ph}
-                  style={{ width: "100%", padding: "12px 14px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8, color: "#fff", fontSize: 14, outline: "none", transition: "all 0.2s" }}
+                  style={{ width: "100%", padding: "12px 14px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8, color: "#fff", fontSize: 14, outline: "none" }}
                 />
               </div>
             ))}
@@ -542,7 +544,7 @@ function ContactPage({ formData, setFormData, submitted, handleSubmit }) {
             </button>
             <div style={{ textAlign: "center", marginTop: 20 }}>
               <p style={{ color: C.dim, fontSize: 12, marginBottom: 12 }}>Or register instantly via WhatsApp</p>
-              <a href="https://wa.me/919392935499?text=Hello%20ShoreBridge!%20I%20am%20a%20Seafarer%20and%20want%20to%20register.%20My%20details%3A%0AName%3A%20%0ARank%3A%20%0AINDOS%20No%3A%20%0ASign-off%20Date%3A%20"
+              <a href="https://wa.me/919392935499?text=Hello%20ShoreBridge!%20I%20am%20a%20Seafarer%20and%20want%20to%20register.%20My%20details%3A%0AName%3A%20%0ARank%3A%20%0AINDOS%20No%3A%20%0ASign-Off%3A%20"
                 target="_blank" rel="noopener noreferrer"
                 style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "#25D366", color: "#fff", padding: "12px 28px", borderRadius: 8, textDecoration: "none", fontWeight: 700, fontSize: 14 }}>
                 💬 Register via WhatsApp
@@ -553,7 +555,7 @@ function ContactPage({ formData, setFormData, submitted, handleSubmit }) {
         )}
         <div style={{ marginTop: 40, display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
           {[
-            { icon: "📧", label: "Email", val: "hello@shorebridge.in" },
+            { icon: "📧", label: "Email", val: "venkat@shorebridge.in" },
             { icon: "💬", label: "WhatsApp", val: "+91 9392935499" },
             { icon: "🌐", label: "Website", val: "www.shorebridge.in" },
           ].map(c => (
